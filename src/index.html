@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link href="https://raw.githubusercontent.com/sinevit/Project1/master/favicon.ico" rel="shortcut icon" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="wrapper header__wrapper">
+        <div class="header__logo"></div>
+        <nav class="header__nav">
+          <ul class="navigation">
+            <li class="navigation__item"><a class='navigation__link active' id="start">Главная</a></li>
+            <li class="navigation__item"><a class='navigation__link' id="game">Викторина</a></li>
+            <li class="navigation__item"><a class='navigation__link'id="result">Рекорды</a></li>
+            <li class="navigation__item"><a class='navigation__link' id="gallery">Галлерея</a></li>
+          </ul>
+        </nav>
+        <div class="header__lang">Ru</div>
+      </div>
+    </header>
+    <main class="main">
+
+      <section class="section section-start">
+        <div class="section__wrapper">
+          <div class="carusel wrapper"></div>
+          <div class="section__content start__content">
+            <p class="section__text start-text">Если бы ты мог стать птицей,то какой птицей ты бы стал?</p>
+            <div class="btn__wrap">
+              <button class="btn section__btn" id="start-btn" onclick="startBtn()">Начать игру</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="section section-game hide">
+        <div class="levels">
+          <ul class="levels__list">
+            <li class="levels__name" id="lvl0">Разминка</li>
+            <li class="levels__name" id="lvl1">Воробьиные</li>
+            <li class="levels__name" id="lvl2">Лесные птицы</li>
+            <li class="levels__name" id="lvl3">Певчие птицы</li>
+            <li class="levels__name" id="lvl4">Хищные птицы</li>
+            <li class="levels__name" id="lvl5">Морские птицы</li>
+          </ul>
+      </div>
+
+      <div class="score">
+        <h3 class="score__text">СЧЕТ : </h3><span class="score__value" id="score"> 0 </span>
+      </div>
+      
+      <div class="question">
+        <img class="question__img" src="https://raw.githubusercontent.com/sinevit/Project1/master/bird.jpg"></img>
+        <div class="question__content">
+          <h3 class="question__name">******</h3>
+      
+          <div class="audioplayer audioplayer-question question__audio" data-src="">
+            <audio src="" class="audio"></audio>
+      
+            <div class="player-controls">
+              <button class="play player-icon" id="play-rand"></button>
+              <div class="time__wrapper">
+                <input class="progress-time" type="range" value="0" min="0" max="100">
+                <div class="span-time">
+                  <span class="songs-time">00:00</span>
+                  <span class="songs-duration"></span>
+                </div>
+              </div>
+            </div>
+      
+            <div class="volume-controls">
+              <button class="volume"></button>
+              <div class="volume__wrapper">
+                <input class="progress-volume" type="range" value="50" min="0" max="100" step="10">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="answer">
+        <div class="birds">
+          <ul class="birds__list"></ul>
+        </div>
+        <div class="cards">
+          <p class="cards__text">Послушайте плеер.</p>
+          <p class="cards__text">Выберите птицу из списка.</p>
+        </div>
+      </div> 
+      <div class="btn__wrap">
+        <button class="btn-lvl" id="next">Следующий раунд</button>
+      </div>
+    </section>
+
+    <section class="section section-result hide"></section>
+    <section class="section section-gallery hide"></section>
+    </main>
+    
+    <footer class="footer">
+      <div class="wrapper footer__wrapper">
+        <p class="footer__text">© 2022 <a class='footer__link active' href="https://github.com/sinevit">Sinevit</a></p>
+        <p class="footer__text rs-link"><a href="https://rs.school/js/"><img class="footer__logo-image" src="https://raw.githubusercontent.com/sinevit/Project1/master/rs-logo.svg"
+          alt="rs-school"></a></p>
+      </div>
+    </footer>
+  </div>  
+    
+</body>
+</html>

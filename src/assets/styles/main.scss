@@ -1,0 +1,19 @@
+@import "./abstract/constant.scss";
+@import "./abstract/placeholder.scss";
+@import "./abstract/mixin.scss";
+
+@import "./base/base.scss";
+@import "./base/btn";
+@import "./base/bird-card";
+// @import "./base/hamburger.scss";
+
+
+@import "./layouts/wrapper.scss";
+@import "./layouts/header.scss";
+@import "./layouts/main.scss";
+@import "./layouts/footer.scss";
+
+@import "./components/start";
+@import "./components/game";
+@import "./components/player";
+@import "./components/gallery";

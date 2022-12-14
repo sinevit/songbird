@@ -1,0 +1,31 @@
+.gallery__section{
+  overflow: hidden;
+  // max-width: 700px;
+  padding: 3rem 1rem;
+}
+
+.cards-gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card__content{
+  width: 45%;
+  padding: 2rem ;
+  border: 2px solid #666;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25;
+
+  @include media-laptop{
+    width: 40%;
+    padding: 0.5rem ;
+  }
+  @include media-tablet{
+    width: 90%;
+    padding: 0.5rem ;
+  }
+}

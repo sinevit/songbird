@@ -1,0 +1,107 @@
+.player-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 1rem 1rem;
+
+  .time__wrapper{
+    padding: 2rem 0 0 1rem;
+    width: 100%;
+
+    .progress-time{
+      width: 100%;
+    
+    }
+
+    .span-time{
+      display: flex;
+      justify-content: space-between;
+      font-size: 1rem;
+      padding-top: 1rem;
+    }
+  }
+}
+
+.volume-controls{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 1rem;
+
+  .volume__wrapper{
+    padding: 0 0 0 1rem;
+    width: 30%;
+  }
+}
+
+
+input[type="range"]{
+  width: 70%;
+  height: 3.5px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #808080;
+  border-radius: 3px;
+  outline: none;
+}
+
+
+input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  height: 15px;
+  width: 15px;
+  background-color: #808080;
+  border-radius: 50%;
+  cursor: pointer;
+}
+  
+  .player-icon,
+  .volume{
+    width: 50px;
+    height: 32px;
+    background-size: 32px 32px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    opacity: .8;
+    cursor: pointer;
+    transition: .3s;  
+  }
+  
+  
+  .player-icon:hover,
+  .volume:hover {
+    opacity: 1;
+  }
+  
+  .player-icon:active,
+  .volume:active{
+    border: 0;
+    outline: 0;  
+    transform: scale(1.1);
+  }
+  
+  .play {
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    background-image: url("https://raw.githubusercontent.com/sinevit/Project1/master/play.png");
+  }
+  
+  .pause {
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    background-image: url("https://raw.githubusercontent.com/sinevit/Project1/master/pause.png");
+  }
+
+  .volume{
+    background: url("https://raw.githubusercontent.com/sinevit/Project1/master/volume.png") no-repeat center;
+  }
+  
+  .mute{
+    background: url("https://raw.githubusercontent.com/sinevit/Project1/master/mute.png") no-repeat center;
+  }

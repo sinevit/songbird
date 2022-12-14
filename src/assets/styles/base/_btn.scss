@@ -1,0 +1,33 @@
+.btn{
+  width: 100%;
+  padding: 10px;
+  color: $color-light;
+  background-color: $color-brand;
+  font-family: 'Roboto', sans-serif;
+  @include font(1.6rem, 1.2, 500);
+  text-align: center;
+  cursor: pointer;
+  @extend %transition;
+    &:hover{
+        background: $color-light;
+        color: $color-brand;
+    }
+}
+
+.btn-lvl{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid $color-border;
+    color: $color-light;
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    @include font(1.6rem, 1.2, 500);
+    text-align: center;
+    cursor: pointer;
+
+
+}
+
+.btn-active{
+  background: $color-brand;
+}

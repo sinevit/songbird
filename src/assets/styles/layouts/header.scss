@@ -1,0 +1,73 @@
+.header{
+  .header__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    padding: 1.5rem 2.5rem;
+
+
+    .header__logo {
+      width: 200px;
+      height: 55px;
+      background-image: url('https://raw.githubusercontent.com/sinevit/Project1/master/logo.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      @include media-mobile{
+        display: none;
+      }
+    }
+    
+    .header__nav{
+      display: flex;
+      align-items: center;
+
+      .navigation{
+        padding: 0;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        @include font(1.6rem, 140%, 500);
+        @include media-mobile{
+          @include font(1.2rem, 120%, 400);
+        }
+  
+
+        &__item{
+          list-style-type: none;
+            &:hover{
+              cursor: pointer;
+            }
+        }
+
+        &__link{
+          list-style: none;
+          color: $color-light;
+          text-decoration: none;
+          &:hover{
+            @extend %transition;
+            cursor: pointer;
+            color: $color-brand;
+          }
+        }
+        .active{
+          color: $color-brand;
+        }    
+
+      }
+    }
+
+    .header__lang{
+      align-items: center;
+      gap: 5.8rem;
+      @include font(1.6rem, 140%, 500);
+
+      &:hover{
+        @extend %transition;
+        cursor: pointer;
+        color: $color-brand;
+      }
+    }
+
+  }
+}

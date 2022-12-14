@@ -1,0 +1,40 @@
+.footer{
+
+  &__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    padding: 1.5rem 2.5rem;
+  }
+
+  &__text{
+    @include font(1.6rem, 140%, 500);
+  }
+
+  &__link{
+    list-style: none;
+    color: $color-light;
+    text-decoration: none;
+    &:hover{
+      @extend %transition;
+      cursor: pointer;
+      color: $color-brand;
+    }
+  }
+  .active{
+    @include font(2.6rem, 140%, 700);
+    color: $color-brand;
+  }
+
+  .rs-link{
+    // background: url('../../assets/img/rs-logo.svg') no-repeat;
+    width: 90px;
+    height: 30px;
+    background-color: $color-brand;
+    &:hover{
+      @extend %transition;
+      cursor: pointer;
+    }
+  }
+}

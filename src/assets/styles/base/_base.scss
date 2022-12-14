@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url('../../assets/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rochester', sans-serif;
+  src: url('../../assets/fonts/Rochester-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+// * {
+//     outline: 1px solid greenyellow !important;
+// } 
+
+html{
+  font-size: 10px;
+  scroll-behavior: smooth;
+  height: 100%;
+
+}
+
+body{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  height: 100%;
+}
+
+.container{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #222;
+  // background: url('../../assets/img/wall1.jpg') no-repeat center;
+  background: url('https://raw.githubusercontent.com/sinevit/Project1/master/wall1.jpg') no-repeat center;
+  background-size: cover;
+}
+
+
+main{
+  flex: 1 1 auto;
+}

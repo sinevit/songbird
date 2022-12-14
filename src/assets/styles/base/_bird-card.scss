@@ -1,0 +1,38 @@
+.cards__wrapper{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+
+  .info__wrapper{
+    display: flex;
+    gap: 2rem;
+
+    @include media-laptop{
+      flex-direction: column;
+    }
+
+    .card__img{
+      margin: auto;
+      width: 200px;
+      height: 155px;
+      border-radius: 10px;
+    }
+    .card__info{
+      display: flex;
+      flex-direction: column;
+      
+      .card__name{
+        margin: 0;
+        @include font(2.4rem, 1.2, 600);
+        padding: 0.25rem;
+        margin-bottom: 0.5rem;
+      }
+      .card__latname{
+        margin: 0;
+        padding: 0.25rem;
+        border-top: 1px solid $color-border;
+        border-bottom: 1px solid $color-border;
+      }
+    }
+  }
+}
